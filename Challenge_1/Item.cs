@@ -12,9 +12,9 @@ namespace Challenge_1
         public Item() { }
 
         //4
-        public Item(int number, string name, string desc, string ingred, int price)
+        public Item(int number, string a, string desc, string ingred, int price)
         {
-            Name = name;
+            A = a;
             Number = number;
             Desc = desc;
             Ingred = ingred;
@@ -22,7 +22,7 @@ namespace Challenge_1
         }
 
         //-- Properties
-        public string Name { get; set; }
+        public string A { get; set; }
         public int Number { get; set; }
         public string Desc { get; set; }
         public string Ingred { get; set; }
@@ -30,7 +30,7 @@ namespace Challenge_1
 
         public override string ToString()
         {
-            string stringToReturn = $"{Number}\t{Name}\t{Desc}\t{Ingred}\t{Price}";
+            string stringToReturn = $"{Number}\t{A}\t{Desc}\t{Ingred}\t{Price}";
             return stringToReturn;
         }
     }

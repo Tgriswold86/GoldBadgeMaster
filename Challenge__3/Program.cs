@@ -17,11 +17,11 @@ namespace Challenge_3
 
         public static void Main(string[] args)
         {
-            Outings one = new Outings((Event)1, 5, "02/18/2018", 10, 50);
-            Outings two = new Outings((Event)2, 10, "03/15/2018", 15, 150);
-            Outings three = new Outings((Event)3, 5, "04/25/2018", 20, 100);
-            Outings four = new Outings((Event)4, 10, "05/22/2018", 50, 500);
-            Outings five = new Outings((Event)1, 10, "06/08/2018", 20, 200);
+            Outings one = new Outings((Event)1, 5, "11/20/1986", 10, 50);
+            Outings two = new Outings((Event)2, 10, "11/20/1986", 15, 150);
+            Outings three = new Outings((Event)3, 5, "11/20/1986", 20, 100);
+            Outings four = new Outings((Event)4, 10, "11/20/1986", 50, 500);
+            Outings five = new Outings((Event)1, 10, "11/20/1986", 20, 200);
 
             OutingRepository _outsRepo = new OutingRepository();
 

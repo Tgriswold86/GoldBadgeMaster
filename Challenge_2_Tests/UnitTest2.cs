@@ -8,7 +8,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Challenge_2_Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTest2
     {
         Queue<Item> _ClaimListTest = new Queue<Item>();
 
@@ -40,8 +40,10 @@ namespace Challenge_2_Tests
         [TestMethod]
         public void ClaimRepo_GetList()
         {
+            Item items2 = new Item(1, "MEOW", "It's a claim", 13, "7/13/2018", "7/13/2018");
+            _claimrepo.AddItem(items2);
             var actual = _claimrepo.GetClaimList();
-            var expect = 0;
+            var expect = 1;
         }
 
         [TestMethod]

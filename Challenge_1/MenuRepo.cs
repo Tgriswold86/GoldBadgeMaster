@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge_1
 {
-    class MenuRepo
+    public class MenuRepo
     {
         List<Item> items = new List<Item>();
 
@@ -30,7 +30,7 @@ namespace Challenge_1
 
         public void removeFromList(string Name)
         {
-            int theIndex = items.FindIndex(item => item.Name == Name);
+            int theIndex = items.FindIndex(item => item == Name);
             items.RemoveAt(theIndex);
         }
     }
