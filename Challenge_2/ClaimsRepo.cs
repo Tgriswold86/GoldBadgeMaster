@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace Challenge_2
 {
-    class ClaimsRepo
+    public class ClaimsRepo
     {
-        List<Item> items = new List<Item>();
+        Queue<Item> _claimlist = new Queue<Item>();
 
-        public void addItemToList(Item cItem)
+        public void AddItem(Item cid)
         {
-            items.Add(cItem);
+            _claimlist.Enqueue(cid);
         }
+
 
         public void PrintList(Queue<Item> List)
         {
@@ -22,20 +23,6 @@ namespace Challenge_2
                 Console.WriteLine(item);
             }
         }
-
-        public void removeFromList(int theid)
-        {
-           int theIndex = items.FindIndex(item => item.Cid == theid);
-           items.RemoveAt(theIndex);
-        }
-
-        Queue<Item> _claimlist = new Queue<Item>();
-
-        public void AddItem(Item cid)
-        {
-            _claimlist.Enqueue(cid);
-        }
-
 
         public Queue<Item> GetClaimList()
         {

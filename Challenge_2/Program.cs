@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Challenge_2
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             ClaimsRepo claimsRepo = new ClaimsRepo();
             Item itemA = new Item(1, "Car", "Hit a deer", 5000, "11/20/1986", "11/25/1986\n");
-            Item itemB = new Item(2, "Car", "Hit a deer", 5000, "11/20/1986", "11/25/1986\n");
+            Item itemB = new Item(2, "Theft", "Stolen pasta maker", 500, "11/20/1986", "11/25/1986\n");
             Item itemC = new Item(3, "Car", "Hit a deer", 5000, "11/20/1986", "11/25/1986\n");
             
 

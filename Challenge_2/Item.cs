@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge_2
 {
-    class Item
+    public class Item
     {
         //3
         public Item() { }

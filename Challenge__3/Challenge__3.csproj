@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{22E585C7-6290-4F12-90C3-F0B2BEE387E1}</ProjectGuid>
+    <ProjectGuid>{41528DCF-6DB6-425C-89D9-CF55C8ABE6DB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Challenge_3</RootNamespace>
-    <AssemblyName>Challenge_3</AssemblyName>
+    <RootNamespace>Challenge__3</RootNamespace>
+    <AssemblyName>Challenge__3</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,16 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OutingRepository.cs" />
     <Compile Include="Outings.cs" />
-    <Compile Include="OutingsConstruct.cs" />
-    <Compile Include="OutingsRepository.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Outing.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
